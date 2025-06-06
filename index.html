@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CKD Risk Predictor</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Chronic Kidney Disease Risk Predictor</h2>
+        <p class="instruction">Please complete all fields for an accurate prediction</p>
+        <form action="/" method="POST">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label>Hemo:</label>
+                    <input type="text" name="hemo" required>
+                </div>
+                <div class="form-group">
+                    <label>Sg:</label>
+                    <input type="text" name="sg" required>
+                </div>
+                <div class="form-group">
+                    <label>Sc:</label>
+                    <input type="text" name="sc" required>
+                </div>
+                <div class="form-group">
+                    <label>Htn:</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="htn" value="yes" required> Yes</label>
+                        <label><input type="radio" name="htn" value="no"> No</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Sod:</label>
+                    <input type="text" name="sod" required>
+                </div>
+                <div class="form-group">
+                    <label>Bgr:</label>
+                    <input type="text" name="bgr" required>
+                </div>
+            </div>
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if prediction %}
+            <div class="result">
+                <strong>Prediction:</strong> {{ prediction }}
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
