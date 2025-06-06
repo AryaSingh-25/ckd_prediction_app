@@ -1,6 +1,4 @@
----
-
-````markdown
+```markdown
 # 🧠 Chronic Kidney Disease (CKD) Prediction Web App
 
 This is a lightweight web application built with **Flask** that predicts the presence of **Chronic Kidney Disease (CKD)** based on key clinical features. It uses a trained **Decision Tree model** and is part of the larger project:  
@@ -34,17 +32,19 @@ This is a lightweight web application built with **Flask** that predicts the pre
 
 ## 🗂️ Project Structure
 
-```markdown
-ckd_prediction_app/
+```
+
+ckd\_prediction\_app/
 ├── static/                      # CSS and static assets
 ├── templates/                   # HTML templates (index.html)
 ├── venv/                        # Virtual environment (optional)
 ├── app.py                       # Flask application
-├── ckd_important_features.pkl   # Selected feature list
-├── ckd_label_encoder.pkl        # Encoded labels for prediction
-├── decision_tree_ckd_model.pkl  # Trained model file
-├── kidney_disease.xlsx          # Original dataset file (optional)
+├── ckd\_important\_features.pkl   # Selected feature list
+├── ckd\_label\_encoder.pkl        # Encoded labels for prediction
+├── decision\_tree\_ckd\_model.pkl  # Trained model file
+├── kidney\_disease.xlsx          # Original dataset file (optional)
 └── requirements.txt             # Dependencies
+
 ````
 
 ---
@@ -56,18 +56,26 @@ ckd_prediction_app/
 ```bash
 git clone https://github.com/yourusername/ckd_prediction_app.git
 cd ckd_prediction_app
-```
+````
 
 ### 2. (Optional) Create a virtual environment
 
 ```bash
 python -m venv venv
-# Activate the environment
-# On Windows:
-venv\Scripts\activate
-# On MacOS/Linux:
-source venv/bin/activate
 ```
+
+* Activate the environment
+  On **Windows**:
+
+  ```bash
+  venv\Scripts\activate
+  ```
+
+  On **MacOS/Linux**:
+
+  ```bash
+  source venv/bin/activate
+  ```
 
 ### 3. Install dependencies
 
@@ -82,7 +90,7 @@ python app.py
 ```
 
 Then open your browser and go to:
-[http://localhost:5000](http://localhost:5000)
+👉 [http://localhost:5000](http://localhost:5000)
 
 ---
 
@@ -90,10 +98,10 @@ Then open your browser and go to:
 
 You can deploy this Flask app using:
 
-* [Render](https://render.com/)
+* [Render](https://render.com/) ✅ Recommended
 * [Railway](https://railway.app/)
-* [Streamlit Cloud (if converted)](https://streamlit.io/cloud)
-* \[Heroku (deprecated free tier)]
+* [Streamlit Cloud](https://streamlit.io/cloud) (if you convert it)
+* [Hugging Face Spaces](https://huggingface.co/spaces) (with Gradio or static interface)
 
 ---
 
@@ -116,5 +124,4 @@ This project is open-source under the [MIT License](LICENSE).
 
 ```
 
----
-```
+
