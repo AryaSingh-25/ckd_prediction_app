@@ -4,6 +4,8 @@
 This is a lightweight web application built with **Flask** that predicts the presence of **Chronic Kidney Disease (CKD)** based on key clinical features. It uses a trained **Decision Tree model** and is part of the larger project:  
 👉 [Multi-Disease Prediction System](https://github.com/deoprakash/multi_disease_prediction)
 
+Hugging face deployment: https://huggingface.co/spaces/aryasingh1320/ckd-prediction-app
+
 ---
 
 ## 📊 Dataset
